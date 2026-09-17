@@ -1,0 +1,1060 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>湾区吃饭清单｜南湾 · 半岛 11 家</title>
+  <meta name="description" content="11 家南湾与半岛餐厅的中文图文指南，含地址、Google 地图入口、菜品与环境图片，以及简明优缺点。">
+  <meta name="theme-color" content="#2d1020">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232d1020'/%3E%3Cpath d='M15 20h34v5H15zm3 9h28c0 12-6 19-14 19S18 41 18 29z' fill='%23ffb45b'/%3E%3Cpath d='M29 10h4v14h-4zm8 1h4v13h-4z' fill='%23fff7ea'/%3E%3C/svg%3E">
+  <style>
+    :root {
+      --ink: #24161c;
+      --aubergine: #2d1020;
+      --wine: #781d42;
+      --saffron: #ffb45b;
+      --cream: #fff7ea;
+      --paper: #f7ead9;
+      --blue: #1e5570;
+      --muted: #74656b;
+      --line: rgba(45, 16, 32, .16);
+      --shadow: 0 20px 55px rgba(45, 16, 32, .13);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 90% 8%, rgba(255, 180, 91, .22), transparent 26rem),
+        linear-gradient(180deg, var(--cream) 0%, #f9f0e3 56%, #f4e4d1 100%);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      font-size: 16px;
+      line-height: 1.65;
+    }
+
+    a { color: inherit; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    img { display: block; width: 100%; }
+
+    .masthead {
+      position: relative;
+      overflow: hidden;
+      min-height: 35rem;
+      padding: 2rem clamp(1.1rem, 4vw, 4.5rem) 4rem;
+      color: var(--cream);
+      background:
+        linear-gradient(120deg, rgba(45, 16, 32, .98), rgba(74, 19, 43, .93)),
+        repeating-linear-gradient(45deg, transparent, transparent 14px, rgba(255,255,255,.03) 14px, rgba(255,255,255,.03) 15px);
+    }
+
+    .masthead::after {
+      content: "食";
+      position: absolute;
+      right: -1rem;
+      bottom: -12rem;
+      color: rgba(255, 180, 91, .09);
+      font-family: "Songti SC", "STSong", serif;
+      font-size: min(44vw, 34rem);
+      line-height: 1;
+      pointer-events: none;
+    }
+
+    .topline {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding-bottom: 1.25rem;
+      border-bottom: 1px solid rgba(255, 247, 234, .28);
+    }
+
+    .eyebrow, .issue {
+      margin: 0;
+      font-size: .82rem;
+      font-weight: 750;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+
+    .issue { color: var(--saffron); }
+    .headline-wrap { position: relative; z-index: 1; max-width: 78rem; margin-top: 4.8rem; }
+    h1 {
+      max-width: 9em;
+      margin: 0;
+      font-family: "Songti SC", "STSong", "Noto Serif CJK SC", serif;
+      font-size: clamp(3.25rem, 8.8vw, 8.6rem);
+      font-weight: 800;
+      letter-spacing: -.065em;
+      line-height: .94;
+    }
+
+    .dek {
+      max-width: 43rem;
+      margin: 2.1rem 0 0;
+      color: rgba(255, 247, 234, .78);
+      font-size: clamp(1rem, 2vw, 1.2rem);
+    }
+
+    .stats {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      max-width: 36rem;
+      margin-top: 2.8rem;
+      border: 1px solid rgba(255, 247, 234, .22);
+      border-radius: 1.1rem;
+      overflow: hidden;
+    }
+
+    .stat { padding: 1rem 1.15rem; background: rgba(255,255,255,.035); }
+    .stat + .stat { border-left: 1px solid rgba(255, 247, 234, .2); }
+    .stat strong { display: block; color: var(--saffron); font-size: 1.35rem; }
+    .stat span { font-size: .82rem; color: rgba(255,247,234,.68); }
+
+    .filters-wrap {
+      position: sticky;
+      z-index: 20;
+      top: 0;
+      padding: .8rem clamp(1rem, 4vw, 4.5rem);
+      border-bottom: 1px solid var(--line);
+      background: rgba(255, 247, 234, .89);
+      backdrop-filter: blur(18px);
+    }
+
+    .filters {
+      display: flex;
+      align-items: center;
+      gap: .6rem;
+      max-width: 92rem;
+      margin: 0 auto;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .filters::-webkit-scrollbar { display: none; }
+
+    .filter-btn {
+      flex: 0 0 auto;
+      min-height: 2.75rem;
+      padding: .65rem 1rem;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--aubergine);
+      background: rgba(255,255,255,.55);
+      font: inherit;
+      font-size: .9rem;
+      font-weight: 720;
+      cursor: pointer;
+    }
+    .filter-btn[aria-pressed="true"] { color: var(--cream); border-color: var(--aubergine); background: var(--aubergine); }
+    .filter-note { margin-left: auto; color: var(--muted); font-size: .82rem; white-space: nowrap; }
+
+    main { max-width: 92rem; margin: 0 auto; padding: 3.6rem clamp(1rem, 4vw, 4.5rem) 6rem; }
+    .section-intro { display: flex; align-items: end; justify-content: space-between; gap: 2rem; margin-bottom: 1.5rem; }
+    .section-intro h2 { margin: 0; font-family: "Songti SC", "STSong", serif; font-size: clamp(2rem, 4vw, 3.5rem); line-height: 1; }
+    .section-intro p { max-width: 34rem; margin: 0; color: var(--muted); }
+
+    .restaurant-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.4rem; }
+    .card {
+      display: grid;
+      grid-template-rows: auto 1fr;
+      min-width: 0;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 1.4rem;
+      background: rgba(255, 253, 248, .9);
+      box-shadow: var(--shadow);
+      transition: transform .24s ease, box-shadow .24s ease;
+    }
+    .card:hover { transform: translateY(-4px); box-shadow: 0 26px 65px rgba(45, 16, 32, .18); }
+    .card[hidden] { display: none; }
+
+    .gallery { position: relative; display: grid; grid-template-columns: 1.2fr .8fr; min-height: 19rem; overflow: hidden; background: var(--aubergine); }
+    .photo { position: relative; min-width: 0; overflow: hidden; background: linear-gradient(135deg, var(--wine), var(--saffron)); }
+    .photo + .photo { border-left: 3px solid var(--cream); }
+    .photo img { height: 100%; object-fit: cover; transition: transform .5s ease; }
+    .card:hover .photo img { transform: scale(1.035); }
+    .photo::after {
+      content: attr(data-label);
+      position: absolute;
+      left: .65rem;
+      bottom: .65rem;
+      padding: .28rem .55rem;
+      border-radius: 999px;
+      color: white;
+      background: rgba(36, 22, 28, .78);
+      font-size: .7rem;
+      font-weight: 750;
+      letter-spacing: .06em;
+    }
+    .photo.is-broken img { display: none; }
+    .photo.is-broken::before { content: "图片暂不可用"; position: absolute; inset: 0; display: grid; place-items: center; color: white; font-weight: 700; }
+    .number {
+      position: absolute;
+      z-index: 2;
+      top: .8rem;
+      right: .8rem;
+      display: grid;
+      width: 3rem;
+      height: 3rem;
+      place-items: center;
+      border: 1px solid rgba(255,255,255,.5);
+      border-radius: 50%;
+      color: var(--aubergine);
+      background: var(--saffron);
+      font-family: Georgia, serif;
+      font-size: 1.1rem;
+      font-weight: 800;
+    }
+
+    .card-body { display: grid; align-content: start; padding: 1.35rem 1.4rem 1.5rem; }
+    .meta-row { display: flex; flex-wrap: wrap; align-items: center; gap: .45rem; margin-bottom: .8rem; }
+    .tag { padding: .28rem .6rem; border-radius: 999px; color: var(--wine); background: #f7d5b0; font-size: .74rem; font-weight: 780; }
+    .tag.blue { color: #fff; background: var(--blue); }
+    .tag.outline { color: var(--muted); border: 1px solid var(--line); background: transparent; }
+    .card h3 { margin: 0; font-family: "Songti SC", "STSong", serif; font-size: clamp(1.65rem, 3vw, 2.35rem); line-height: 1.08; }
+    .english { margin-left: .3rem; color: var(--muted); font-family: Georgia, serif; font-size: .92rem; font-weight: 500; }
+    .intro { margin: .8rem 0 1rem; color: #58484f; }
+
+    .verdict {
+      display: grid;
+      gap: .45rem;
+      margin: 0 0 1rem;
+      padding: .9rem 1rem;
+      border-left: 4px solid var(--saffron);
+      border-radius: .25rem .85rem .85rem .25rem;
+      background: #fff2df;
+    }
+    .verdict p { display: grid; grid-template-columns: 2.4rem 1fr; gap: .55rem; margin: 0; }
+    .verdict b { color: var(--wine); }
+
+    .address { display: flex; gap: .55rem; align-items: start; margin: 0; color: var(--muted); font-size: .9rem; }
+    .address svg { flex: 0 0 auto; width: 1rem; margin-top: .26rem; }
+    .actions { display: flex; flex-wrap: wrap; gap: .6rem; margin-top: 1.1rem; }
+    .map-link, .source-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 2.8rem;
+      padding: .68rem .9rem;
+      border-radius: .8rem;
+      text-decoration: none;
+      font-size: .86rem;
+      font-weight: 760;
+    }
+    .map-link { color: white; background: var(--aubergine); }
+    .map-link:hover { background: var(--wine); }
+    .source-link { color: var(--aubergine); border: 1px solid var(--line); background: white; }
+
+    .footnote {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 2rem;
+      margin-top: 3.3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: .84rem;
+    }
+    .footnote p { max-width: 56rem; margin: 0; }
+    .back-top { font-weight: 760; text-decoration: none; }
+
+    @media (max-width: 840px) {<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>湾区吃饭清单｜南湾 · 半岛 11 家</title>
+  <meta name="description" content="11 家南湾与半岛餐厅的中文图文指南，含地址、Google 地图入口、菜品与环境图片，以及简明优缺点。">
+  <meta name="theme-color" content="#2d1020">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232d1020'/%3E%3Cpath d='M15 20h34v5H15zm3 9h28c0 12-6 19-14 19S18 41 18 29z' fill='%23ffb45b'/%3E%3Cpath d='M29 10h4v14h-4zm8 1h4v13h-4z' fill='%23fff7ea'/%3E%3C/svg%3E">
+  <style>
+    :root {
+      --ink: #24161c;
+      --aubergine: #2d1020;
+      --wine: #781d42;
+      --saffron: #ffb45b;
+      --cream: #fff7ea;
+      --paper: #f7ead9;
+      --blue: #1e5570;
+      --muted: #74656b;
+      --line: rgba(45, 16, 32, .16);
+      --shadow: 0 20px 55px rgba(45, 16, 32, .13);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 90% 8%, rgba(255, 180, 91, .22), transparent 26rem),
+        linear-gradient(180deg, var(--cream) 0%, #f9f0e3 56%, #f4e4d1 100%);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      font-size: 16px;
+      line-height: 1.65;
+    }
+
+    a { color: inherit; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    img { display: block; width: 100%; }
+
+    .masthead {
+      position: relative;
+      overflow: hidden;
+      min-height: 35rem;
+      padding: 2rem clamp(1.1rem, 4vw, 4.5rem) 4rem;
+      color: var(--cream);
+      background:
+        linear-gradient(120deg, rgba(45, 16, 32, .98), rgba(74, 19, 43, .93)),
+        repeating-linear-gradient(45deg, transparent, transparent 14px, rgba(255,255,255,.03) 14px, rgba(255,255,255,.03) 15px);
+    }
+
+    .masthead::after {
+      content: "食";
+      position: absolute;
+      right: -1rem;
+      bottom: -12rem;
+      color: rgba(255, 180, 91, .09);
+      font-family: "Songti SC", "STSong", serif;
+      font-size: min(44vw, 34rem);
+      line-height: 1;
+      pointer-events: none;
+    }
+
+    .topline {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding-bottom: 1.25rem;
+      border-bottom: 1px solid rgba(255, 247, 234, .28);
+    }
+
+    .eyebrow, .issue {
+      margin: 0;
+      font-size: .82rem;
+      font-weight: 750;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+
+    .issue { color: var(--saffron); }
+    .headline-wrap { position: relative; z-index: 1; max-width: 78rem; margin-top: 4.8rem; }
+    h1 {
+      max-width: 9em;
+      margin: 0;
+      font-family: "Songti SC", "STSong", "Noto Serif CJK SC", serif;
+      font-size: clamp(3.25rem, 8.8vw, 8.6rem);
+      font-weight: 800;
+      letter-spacing: -.065em;
+      line-height: .94;
+    }
+
+    .dek {
+      max-width: 43rem;
+      margin: 2.1rem 0 0;
+      color: rgba(255, 247, 234, .78);
+      font-size: clamp(1rem, 2vw, 1.2rem);
+    }
+
+    .stats {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      max-width: 36rem;
+      margin-top: 2.8rem;
+      border: 1px solid rgba(255, 247, 234, .22);
+      border-radius: 1.1rem;
+      overflow: hidden;
+    }
+
+    .stat { padding: 1rem 1.15rem; background: rgba(255,255,255,.035); }
+    .stat + .stat { border-left: 1px solid rgba(255, 247, 234, .2); }
+    .stat strong { display: block; color: var(--saffron); font-size: 1.35rem; }
+    .stat span { font-size: .82rem; color: rgba(255,247,234,.68); }
+
+    .filters-wrap {
+      position: sticky;
+      z-index: 20;
+      top: 0;
+      padding: .8rem clamp(1rem, 4vw, 4.5rem);
+      border-bottom: 1px solid var(--line);
+      background: rgba(255, 247, 234, .89);
+      backdrop-filter: blur(18px);
+    }
+
+    .filters {
+      display: flex;
+      align-items: center;
+      gap: .6rem;
+      max-width: 92rem;
+      margin: 0 auto;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .filters::-webkit-scrollbar { display: none; }
+
+    .filter-btn {
+      flex: 0 0 auto;
+      min-height: 2.75rem;
+      padding: .65rem 1rem;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--aubergine);
+      background: rgba(255,255,255,.55);
+      font: inherit;
+      font-size: .9rem;
+      font-weight: 720;
+      cursor: pointer;
+    }
+    .filter-btn[aria-pressed="true"] { color: var(--cream); border-color: var(--aubergine); background: var(--aubergine); }
+    .filter-note { margin-left: auto; color: var(--muted); font-size: .82rem; white-space: nowrap; }
+
+    main { max-width: 92rem; margin: 0 auto; padding: 3.6rem clamp(1rem, 4vw, 4.5rem) 6rem; }
+    .section-intro { display: flex; align-items: end; justify-content: space-between; gap: 2rem; margin-bottom: 1.5rem; }
+    .section-intro h2 { margin: 0; font-family: "Songti SC", "STSong", serif; font-size: clamp(2rem, 4vw, 3.5rem); line-height: 1; }
+    .section-intro p { max-width: 34rem; margin: 0; color: var(--muted); }
+
+    .restaurant-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.4rem; }
+    .card {
+      display: grid;
+      grid-template-rows: auto 1fr;
+      min-width: 0;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 1.4rem;
+      background: rgba(255, 253, 248, .9);
+      box-shadow: var(--shadow);
+      transition: transform .24s ease, box-shadow .24s ease;
+    }
+    .card:hover { transform: translateY(-4px); box-shadow: 0 26px 65px rgba(45, 16, 32, .18); }
+    .card[hidden] { display: none; }
+
+    .gallery { position: relative; display: grid; grid-template-columns: 1.2fr .8fr; min-height: 19rem; overflow: hidden; background: var(--aubergine); }
+    .photo { position: relative; min-width: 0; overflow: hidden; background: linear-gradient(135deg, var(--wine), var(--saffron)); }
+    .photo + .photo { border-left: 3px solid var(--cream); }
+    .photo img { height: 100%; object-fit: cover; transition: transform .5s ease; }
+    .card:hover .photo img { transform: scale(1.035); }
+    .photo::after {
+      content: attr(data-label);
+      position: absolute;
+      left: .65rem;
+      bottom: .65rem;
+      padding: .28rem .55rem;
+      border-radius: 999px;
+      color: white;
+      background: rgba(36, 22, 28, .78);
+      font-size: .7rem;
+      font-weight: 750;
+      letter-spacing: .06em;
+    }
+    .photo.is-broken img { display: none; }
+    .photo.is-broken::before { content: "图片暂不可用"; position: absolute; inset: 0; display: grid; place-items: center; color: white; font-weight: 700; }
+    .number {
+      position: absolute;
+      z-index: 2;
+      top: .8rem;
+      right: .8rem;
+      display: grid;
+      width: 3rem;
+      height: 3rem;
+      place-items: center;
+      border: 1px solid rgba(255,255,255,.5);
+      border-radius: 50%;
+      color: var(--aubergine);
+      background: var(--saffron);
+      font-family: Georgia, serif;
+      font-size: 1.1rem;
+      font-weight: 800;
+    }
+
+    .card-body { display: grid; align-content: start; padding: 1.35rem 1.4rem 1.5rem; }
+    .meta-row { display: flex; flex-wrap: wrap; align-items: center; gap: .45rem; margin-bottom: .8rem; }
+    .tag { padding: .28rem .6rem; border-radius: 999px; color: var(--wine); background: #f7d5b0; font-size: .74rem; font-weight: 780; }
+    .tag.blue { color: #fff; background: var(--blue); }
+    .tag.outline { color: var(--muted); border: 1px solid var(--line); background: transparent; }
+    .card h3 { margin: 0; font-family: "Songti SC", "STSong", serif; font-size: clamp(1.65rem, 3vw, 2.35rem); line-height: 1.08; }
+    .english { margin-left: .3rem; color: var(--muted); font-family: Georgia, serif; font-size: .92rem; font-weight: 500; }
+    .intro { margin: .8rem 0 1rem; color: #58484f; }
+
+    .verdict {
+      display: grid;
+      gap: .45rem;
+      margin: 0 0 1rem;
+      padding: .9rem 1rem;
+      border-left: 4px solid var(--saffron);
+      border-radius: .25rem .85rem .85rem .25rem;
+      background: #fff2df;
+    }
+    .verdict p { display: grid; grid-template-columns: 2.4rem 1fr; gap: .55rem; margin: 0; }
+    .verdict b { color: var(--wine); }
+
+    .address { display: flex; gap: .55rem; align-items: start; margin: 0; color: var(--muted); font-size: .9rem; }
+    .address svg { flex: 0 0 auto; width: 1rem; margin-top: .26rem; }
+    .actions { display: flex; flex-wrap: wrap; gap: .6rem; margin-top: 1.1rem; }
+    .map-link, .source-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 2.8rem;
+      padding: .68rem .9rem;
+      border-radius: .8rem;
+      text-decoration: none;
+      font-size: .86rem;
+      font-weight: 760;
+    }
+    .map-link { color: white; background: var(--aubergine); }
+    .map-link:hover { background: var(--wine); }
+    .source-link { color: var(--aubergine); border: 1px solid var(--line); background: white; }
+
+    .footnote {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 2rem;
+      margin-top: 3.3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: .84rem;
+    }
+    .footnote p { max-width: 56rem; margin: 0; }
+    .back-top { font-weight: 760; text-decoration: none; }
+
+    @media (max-width: 840px) {
+      .masthead { min-height: 31rem; }
+      .stats { grid-template-columns: 1fr; max-width: 19rem; }
+      .stat + .stat { border-top: 1px solid rgba(255, 247, 234, .2); border-left: 0; }
+      .filter-note { display: none; }
+      .section-intro { display: block; }
+      .section-intro p { margin-top: .8rem; }
+      .restaurant-grid { grid-template-columns: 1fr; }
+      .gallery { min-height: 17rem; }
+    }
+
+    @media (max-width: 520px) {
+      .masthead { min-height: 30rem; padding-top: 1.2rem; }
+      .topline { align-items: start; }
+      .eyebrow { max-width: 11rem; }
+      .headline-wrap { margin-top: 3.5rem; }
+      h1 { font-size: clamp(3rem, 18vw, 5rem); }
+      main { padding-top: 2.7rem; }
+      .gallery { grid-template-columns: 1fr 34%; min-height: 14.5rem; }
+      .card-body { padding: 1.15rem; }
+      .footnote { grid-template-columns: 1fr; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition: none !important; }
+    }
+  </style>
+</head>
+<body id="top">
+  <header class="masthead">
+    <div class="topline">
+      <p class="eyebrow">South Bay · Peninsula Restaurant Notes</p>
+      <p class="issue">11 家 · 2 条路线</p>
+    </div>
+    <div class="headline-wrap">
+      <h1>湾区<br>吃饭清单</h1>
+      <p class="dek">从 Cupertino、Sunnyvale、Milpitas 一路吃到 Palo Alto。每家都整理了地址、Google 地图、菜品与环境图，以及不绕弯的优缺点。</p>
+      <div class="stats" aria-label="清单概览">
+        <div class="stat"><strong>5</strong><span>家中餐 · 均可 walk in</span></div>
+        <div class="stat"><strong>6</strong><span>家其他品类 · 看提示</span></div>
+        <div class="stat"><strong>1 tap</strong><span>直达 Google 地图</span></div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="filters-wrap" aria-label="餐厅筛选">
+    <div class="filters">
+      <button class="filter-btn" type="button" data-filter="all" aria-pressed="true">全部 11 家</button>
+      <button class="filter-btn" type="button" data-filter="chinese" aria-pressed="false">中餐 · Walk in</button>
+      <button class="filter-btn" type="button" data-filter="other" aria-pressed="false">其他品类</button>
+      <span class="filter-note">点开卡片里的按钮即可导航</span>
+    </div>
+  </nav>
+
+  <main>
+    <div class="section-intro">
+      <h2>按当晚心情选</h2>
+      <p>想吃重口、想找漂亮环境，或只想选个离得近的地方——先看优缺点，再点地图出发。</p>
+    </div>
+
+    <section class="restaurant-grid" aria-live="polite">
+      <article class="card" data-category="chinese">
+        <div class="gallery">
+          <div class="photo" data-label="菜品实拍"><img loading="eager" src="https://imgcache.dealmoon.com/fsvrugccache.dealmoon.com/us2409/ugc/9f0/41e/05d/ed2b1a7346e4e33ccc05e13x1920x1440x1075.jpg_1280_1280_3_8d59.jpg" alt="留湘小聚云南与湘味菜品"></div>
+          <div class="photo" data-label="店内环境"><img loading="eager" src="https://ak-d.tripcdn.com/images/1mi0a224x8yo450qtA3A7_R_600_400_R5_Q90.jpg?proc=source%2Ftrip" alt="留湘小聚 Cupertino 店内环境"></div>
+          <span class="number">01</span>
+        </div>
+        <div class="card-body">
+          <div class="meta-row"><span class="tag">云南菜 · 湘味</span><span class="tag outline">Cupertino</span><span class="tag blue">Walk in</span></div>
+          <h3>留湘小聚 <span class="english">Ping’s Bistro</span></h3>
+          <p class="intro">云南菌菇、酸辣风味与湘菜同桌，适合多人点几道下饭菜一起分。店面不大、烟火气足，属于“为味道来”的热闹小馆。</p>
+          <div class="verdict"><p><b>优点</b><span>味道扎实，云南菜选择有辨识度</span></p><p><b>缺点</b><span>店面热闹，尖峰时段较嘈杂</span></p></div>
+          <p class="address"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.1 7 13 7 13s7-7.9 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5Z"/></svg><span>10700 S De Anza Blvd, Cupertino, CA 95014</span></p>
+          <div class="actions"><a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Ping%27s%20Bistro%2010700%20S%20De%20Anza%20Blvd%20Cupertino%20CA%2095014" target="_blank" rel="noopener">Google 地图 ↗</a><a class="source-link" href="https://www.dealmoon.com/post/2375739" target="_blank" rel="noopener">图片来源</a></div>
+        </div>
+      </article>
+
+      <article class="card" data-category="chinese">
+        <div class="gallery">
+          <div class="photo" data-label="菜品实拍"><img loading="lazy" src="https://cdn10.localdatacdn.com/ca/sunnyvale/9659205/original/Co8lXePXAl.jpeg" alt="Eilleen's Kitchen 江浙菜品"></div>
+          <div class="photo" data-label="店内环境"><img loading="lazy" src="https://cdn10.localdatacdn.com/ca/sunnyvale/9659205/original/h55s7WPJ6W.jpeg" alt="Eilleen's Kitchen 店内环境"></div>
+          <span class="number">02</span>
+        </div>
+        <div class="card-body">
+          <div class="meta-row"><span class="tag">江浙菜</span><span class="tag outline">Sunnyvale</span><span class="tag blue">Walk in</span></div>
+          <h3>Eilleen’s Kitchen</h3>
+          <p class="intro">偏精致的江浙家常路线，口味更收敛，适合想吃食材本味、又不想顿顿重辣的晚上。竹木细节让小馆显得清爽。</p>
+          <div class="verdict"><p><b>优点</b><span>食材好，江浙口味细致，距离近</span></p><p><b>缺点</b><span>在中餐里价位偏高</span></p></div>
+          <p class="address"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.1 7 13 7 13s7-7.9 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5Z"/></svg><span>251 W Washington Ave, Sunnyvale, CA 94086</span></p>
+          <div class="actions"><a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Eilleen%27s%20Kitchen%20251%20W%20Washington%20Ave%20Sunnyvale%20CA%2094086" target="_blank" rel="noopener">Google 地图 ↗</a><a class="source-link" href="https://www.restaurantji.com/ca/sunnyvale/eilleen-s-kitchen-/" target="_blank" rel="noopener">图片来源</a></div>
+        </div>
+      </article>
+
+      <article class="card" data-category="chinese">
+        <div class="gallery">
+          <div class="photo" data-label="菜品实拍"><img loading="lazy" src="https://d1w7312wesee68.cloudfront.net/KCEPsuXkQ1NQydZfSeR9CCAZpETh6NQABMAjQnucntU/ext%3Awebp/quality%3A85/c%3A2730%3A1280%3Ace%3A0%3A0/plain/s3%3A/toast-sites-resources-prod/restaurantImages/033e5f5a-2a30-45a7-8510-0ed8e35af92a/.jpg" alt="Jun Bistro 云南菌菇菜品"></div>
+          <div class="photo" data-label="门店环境"><img loading="lazy" src="https://static.where-e.com/United_States/California/Santa_Clara_County/Jun-Bistro_597be075427145d5b7295d845fb20889.jpg" alt="Jun Bistro Milpitas 门店"></div>
+          <span class="number">03</span>
+        </div>
+        <div class="card-body">
+          <div class="meta-row"><span class="tag">云贵融合</span><span class="tag outline">Milpitas</span><span class="tag blue">Walk in</span></div>
+          <h3>菌出云南 <span class="english">Jun Bistro</span></h3>
+          <p class="intro">以云南菌菇为主角，加入贵州酸香与现代摆盘；从野生菌、酸汤到创意小炒都有记忆点，适合想换口味的一餐。</p>
+          <div class="verdict"><p><b>优点</b><span>云贵风味鲜明，菌菇与酸辣菜出彩</span></p><p><b>缺点</b><span>热门时段可能排队，不过距离很近</span></p></div>
+          <p class="address"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.1 7 13 7 13s7-7.9 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5Z"/></svg><span>290 Barber Ct, Milpitas, CA 95035</span></p>
+          <div class="actions"><a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Jun%20Bistro%20290%20Barber%20Ct%20Milpitas%20CA%2095035" target="_blank" rel="noopener">Google 地图 ↗</a><a class="source-link" href="https://junbistro.us/" target="_blank" rel="noopener">图片来源</a></div>
+        </div>
+      </article>
+
+      <article class="card" data-category="chinese">
+        <div class="gallery">
+          <div class="photo" data-label="招牌大菜"><img loading="lazy" src="https://chili-garden.com/gallery/Chili%20Garden%20%E5%B1%B1%E5%9F%8E%E7%A7%81%E6%88%BF%E8%8F%9C01.jpg" alt="山城私房菜招牌菜"></div>
+          <div class="photo" data-label="官方环境图"><img loading="lazy" src="https://chili-garden.com/banner.jpg" alt="山城私房菜环境"></div>
+          <span class="number">04</span>
+        </div>
+        <div class="card-body">
+          <div class="meta-row"><span class="tag">东北风味 · 川渝家常</span><span class="tag outline">Milpitas</span><span class="tag blue">Walk in</span></div>
+          <h3>山城私房菜 <span class="english">Chili Garden</span></h3>
+          <p class="intro">铁锅炖与大份硬菜是主场，适合人多、胃口也好的局。做法带着东北豪爽和川渝香辣，最好一开始就少点一盘。</p>
+          <div class="verdict"><p><b>优点</b><span>美味，分量足，适合多人聚餐</span></p><p><b>缺点</b><span>环境普通；菜量太大常吃不完</span></p></div>
+          <p class="address"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.1 7 13 7 13s7-7.9 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5Z"/></svg><span>278 Barber Ct, Milpitas, CA 95035</span></p>
+          <div class="actions"><a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Chili%20Garden%20278%20Barber%20Ct%20Milpitas%20CA%2095035" target="_blank" rel="noopener">Google 地图 ↗</a><a class="source-link" href="https://chili-garden.com/" target="_blank" rel="noopener">图片来源</a></div>
+        </div>
+      </article>
+
+      <article class="card" data-category="chinese">
+        <div class="gallery">
+          <div class="photo" data-label="品牌菜品"><img loading="lazy" src="https://img.xiangmu.com/pics/202502/26/1740576150XQF1ZUW.png" alt="湘卜卜湖南菜品牌菜品"></div>
+          <div class="photo" data-label="品牌空间参考"><img loading="lazy" src="https://img.xiangmu.com/pics/202502/26/1740576153WMOLOPM.png" alt="湘卜卜品牌空间参考"></div>
+          <span class="number">05</span>
+        </div>
+        <div class="card-body">
+          <div class="meta-row"><span class="tag">新派湘菜</span><span class="tag outline">Cupertino</span><span class="tag blue">Walk in</span></div>
+          <h3>湘卜卜 <span class="english">XiangBobo</span></h3>
+          <p class="intro">主打现炒、香辣与砂锅类的年轻化湘菜，饭后还能顺路去茶理宜世续一杯奶茶，适合把晚餐和甜饮排成一站。</p>
+          <div class="verdict"><p><b>优点</b><span>离茶理宜世近，吃完接奶茶很顺路</span></p><p><b>缺点</b><span>热门时段可能排队</span></p></div>
+          <p class="address"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.1 7 13 7 13s7-7.9 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5Z"/></svg><span>10877 N Wolfe Rd, Cupertino, CA 95014</span></p>
+          <div class="actions"><a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=XiangBobo%20Hunan%20Cuisine%2010877%20N%20Wolfe%20Rd%20Cupertino%20CA%2095014" target="_blank" rel="noopener">Google 地图 ↗</a><a class="source-link" href="https://pos.chowbus.com/online-ordering/store/XiangBobo-Hunan-Cuisine/23919" target="_blank" rel="noopener">门店信息</a></div>
+        </div>
+      </article>
+
+      <article class="card" data-category="other">
+        <div class="gallery">
+          <div class="photo" data-label="菜品实拍"><img loading="lazy" src="https://www.sanjose.org/sites/default/files/styles/image_collage_three_748_x_498/public/2024-11/EOSNYX_PChang-1374.jpg.webp?itok=k8Bti235" alt="Eos and Nyx 美式地中海菜品"></div>
+          <div class="photo" data-label="店内环境"><img loading="lazy" src="https://static.wixstatic.com/media/692889_640bf724c96249ae872b67c325a20c19~mv2.jpg/v1/fill/w_1450%2Ch_815%2Cq_90/692889_640bf724c96249ae872b67c325a20c19~mv2.jpg" alt="Eos and Nyx 店内环境"></div>
+          <span class="number">06</span>
+        </div>
+        <div class="card-body">
+          <div class="meta-row"><span class="tag">美式 · 地中海</span><span class="tag outline">San Jose</span><span class="tag blue">建议预订</span></div>
+          <h3>Eos &amp; Nyx</h3>
+          <p class="intro">加州时令食材加地中海调味，菜式适合分享；挑高空间、室内绿植和双层酒吧很上镜，更像一场完整的约会或庆祝晚餐。</p>
+          <div class="verdict"><p><b>优点</b><span>环境漂亮，适合约会与聚会</span></p><p><b>缺点</b><span>口味偏清爽，重口人会觉得像“白人饭”</span></p></div>
+          <p class="address"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.1 7 13 7 13s7-7.9 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5Z"/></svg><span>201 S 2nd St, Ste 120, San Jose, CA 95113</span></p>
+          <div class="actions"><a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Eos%20%26%20Nyx%20201%20S%202nd%20St%20San%20Jose%20CA%2095113" target="_blank" rel="noopener">Google 地图 ↗</a><a class="source-link" href="https://www.eosnyxsj.com/" target="_blank" rel="noopener">图片来源</a></div>
+        </div>
+      </article>
+
+      <article class="card" data-category="other">
+        <div class="gallery">
+          <div class="photo" data-label="Mezze 菜品"><img loading="lazy" src="https://s.hdnux.com/photos/01/55/33/16/28685217/5/rawImage.jpg" alt="Zaytinya Palo Alto 地中海 mezze"></div>
+          <div class="photo" data-label="店内环境"><img loading="lazy" src="https://resizer.otstatic.com/v3/photos/90149743-1" alt="Zaytinya Palo Alto 店内环境"></div>
+          <span class="number">07</span>
+        </div>
+        <div class="card-body">
+          <div class="meta-row"><span class="tag">土耳其 · 希腊 · 黎巴嫩</span><span class="tag outline">Palo Alto</span><span class="tag blue">可预订</span></div>
+          <h3>Zaytinya</h3>
+          <p class="intro">José Andrés 团队的现代 mezze 餐厅，小盘菜适合多人分着尝；烤肉、蘸酱、皮塔饼和蔬菜都强调原味与香料层次。</p>
+          <div class="verdict"><p><b>优点</b><span>食材本味清楚，环境明亮好看</span></p><p><b>缺点</b><span>在 Palo Alto，距离较远</span></p></div>
+          <p class="address"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.1 7 13 7 13s7-7.9 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5Z"/></svg><span>180 El Camino Real, Suite EE 1400, Palo Alto, CA 94304</span></p>
+          <div class="actions"><a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Zaytinya%20180%20El%20Camino%20Real%20Palo%20Alto%20CA%2094304" target="_blank" rel="noopener">Google 地图 ↗</a><a class="source-link" href="https://www.zaytinya.com/location/palo-alto/" target="_blank" rel="noopener">图片来源</a></div>
+        </div>
+      </article>
+
+      <article class="card" data-category="other">
+        <div class="gallery">
+          <div class="photo" data-label="菜品实拍"><img loading="lazy" src="https://s3-media0.fl.yelpcdn.com/bphoto/x-SnIciIdIyjgfJx0iV8xQ/l.jpg" alt="Tamarine 越南融合菜品"></div>
+          <div class="photo" data-label="店内环境"><img loading="lazy" src="https://s3-media0.fl.yelpcdn.com/bphoto/QxEv1PVBGABkRD8ByKMD7w/l.jpg" alt="Tamarine Palo Alto 店内环境"></div>
+          <span class="number">08</span>
+        </div>
+        <div class="card-body">
+          <div class="meta-row"><span class="tag">现代越南菜</span><span class="tag outline">Palo Alto</span><span class="tag blue">可预订</span></div>
+          <h3>Tamarine</h3>
+          <p class="intro">把越南香草、鱼露与炭火风味做得更精致，适合想吃东南亚、又希望环境稳妥体面的聚餐或约会。</p>
+          <div class="verdict"><p><b>优点</b><span>味道好，越南风味细致而有层次</span></p><p><b>缺点</b><span>在 Palo Alto，距离较远</span></p></div>
+          <p class="address"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.1 7 13 7 13s7-7.9 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5Z"/></svg><span>546 University Ave, Palo Alto, CA 94301</span></p>
+          <div class="actions"><a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Tamarine%20546%20University%20Ave%20Palo%20Alto%20CA%2094301" target="_blank" rel="noopener">Google 地图 ↗</a><a class="source-link" href="https://www.tamarinerestaurant.com/" target="_blank" rel="noopener">图片来源</a></div>
+        </div>
+      </article>
+
+      <article class="card" data-category="other">
+        <div class="gallery">
+          <div class="photo" data-label="海鲜菜品"><img loading="lazy" src="https://s3-media0.fl.yelpcdn.com/bphoto/3IEhhsoSsYUstKWe1dzaJA/l.jpg" alt="Saigon Kitchen 龙虾海鲜菜品"></div>
+          <div class="photo" data-label="店内环境"><img loading="lazy" src="https://cdn.menu-world.com/saigon-kitchen/4.jpg" alt="Saigon Kitchen San Jose 店内环境"></div>
+          <span class="number">09</span>
+        </div>
+        <div class="card-body">
+          <div class="meta-row"><span class="tag">越南海鲜</span><span class="tag outline">San Jose · Little Saigon</span><span class="tag blue">Walk in</span></div>
+          <h3>Saigon Kitchen</h3>
+          <p class="intro">位于 Grand Century Mall，龙虾、螃蟹与蒜香面等适合多人共享；价格相对友好，是想吃热闹海鲜桌菜的实用选项。</p>
+          <div class="verdict"><p><b>优点</b><span>价格友好，海鲜选择多</span></p><p><b>缺点</b><span>越南城晚间较杂，建议结伴前往</span></p></div>
+          <p class="address"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.1 7 13 7 13s7-7.9 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5Z"/></svg><span>1111 Story Rd, #1005, San Jose, CA 95122</span></p>
+          <div class="actions"><a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Saigon%20Kitchen%201111%20Story%20Rd%20San%20Jose%20CA%2095122" target="_blank" rel="noopener">Google 地图 ↗</a><a class="source-link" href="https://www.yelp.com/biz/saigon-kitchen-san-jose" target="_blank" rel="noopener">图片来源</a></div>
+        </div>
+      </article>
+
+      <article class="card" data-category="other">
+        <div class="gallery">
+          <div class="photo" data-label="官方菜品图"><img loading="lazy" src="https://images.squarespace-cdn.com/content/v1/688084e7a137243f97c898bf/76a02757-38ef-4975-ae7a-94fd08117882/ARV02176.jpg?format=1500w" alt="HARU Los Altos 菜品"></div>
+          <div class="photo" data-label="官方空间形象"><img loading="lazy" src="https://images.squarespace-cdn.com/content/v1/688084e7a137243f97c898bf/1408738c-0583-473d-8bb1-2f3d401c2886/ChatGPT%2BImage%2B2026%E5%B9%B47%E6%9C%883%E6%97%A5%2B%E4%B8%8B%E5%8D%8810_06_05.png?format=1500w" alt="HARU Los Altos 官方空间形象"></div>
+          <span class="number">10</span>
+        </div>
+        <div class="card-body">
+          <div class="meta-row"><span class="tag">现代日料</span><span class="tag outline">Los Altos</span><span class="tag blue">可预订 / 可候位</span></div>
+          <h3>HARU</h3>
+          <p class="intro">新开的现代日料与酒吧，主打季节食材、寿司和热菜，空间偏精致。适合想尝新、又不想被固定 omakase 套餐绑住的一晚。</p>
+          <div class="verdict"><p><b>优点</b><span>新店，季节日料据说表现不错</span></p><p><b>缺点</b><span>Los Altos 略远</span></p></div>
+          <p class="address"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.1 7 13 7 13s7-7.9 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5Z"/></svg><span>325 Main St, Los Altos, CA 94022</span></p>
+          <div class="actions"><a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=HARU%20325%20Main%20St%20Los%20Altos%20CA%2094022" target="_blank" rel="noopener">Google 地图 ↗</a><a class="source-link" href="https://www.harulosaltos.com/" target="_blank" rel="noopener">图片来源</a></div>
+        </div>
+      </article>
+
+      <article class="card" data-category="other">
+        <div class="gallery">
+          <div class="photo" data-label="豆腐锅套餐"><img loading="lazy" src="https://img.cdn4dd.com/cdn-cgi/image/fit%3Dcontain%2Cwidth%3D1200%2Cheight%3D672%2Cformat%3Dauto/https%3A/doordash-static.s3.amazonaws.com/media/photosV2/edd5b892-4cf5-4afb-8da1-66cb6b8c9815-retina-large.jpg" alt="Kunjip Tofu 豆腐锅与小菜"></div>
+          <div class="photo" data-label="店内环境"><img loading="lazy" src="https://s.hdnux.com/photos/01/43/45/15/26104670/5/rawImage.jpg" alt="Kunjip Tofu Mountain View 店内环境"></div>
+          <span class="number">11</span>
+        </div>
+        <div class="card-body">
+          <div class="meta-row"><span class="tag">现代韩餐 · 豆腐锅</span><span class="tag outline">Mountain View</span><span class="tag blue">建议排候位</span></div>
+          <h3>Kunjip Tofu</h3>
+          <p class="intro">主打豆腐锅、汤饭与韩式小菜，一人一锅吃起来舒服，味道扎实。比传统豆腐屋更现代，适合各自点喜欢的汤。</p>
+          <div class="verdict"><p><b>优点</b><span>好吃，豆腐锅和汤饭选择丰富</span></p><p><b>缺点</b><span>一人一锅不方便分享，而且较远</span></p></div>
+          <p class="address"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.1 7 13 7 13s7-7.9 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5Z"/></svg><span>1962 W El Camino Real, Mountain View, CA 94040</span></p>
+          <div class="actions"><a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Kunjip%20Tofu%201962%20W%20El%20Camino%20Real%20Mountain%20View%20CA%2094040" target="_blank" rel="noopener">Google 地图 ↗</a><a class="source-link" href="https://kunjiptofu.com/" target="_blank" rel="noopener">图片来源</a></div>
+        </div>
+      </article>
+    </section>
+
+    <footer class="footnote">
+      <p>地址与门店信息已按公开资料核对。营业时间、排队和菜单会变化，出发前建议再点 Google 地图确认。照片来自餐厅官网、媒体或公开餐厅图集；湘卜卜的环境图为品牌空间参考，HARU 的环境图为官网空间形象图。</p>
+      <a class="back-top" href="#top">回到顶部 ↑</a>
+    </footer>
+  </main>
+
+  <script>
+    const buttons = document.querySelectorAll('.filter-btn');
+    const cards = document.querySelectorAll('.card');
+
+    buttons.forEach((button) => {
+      button.addEventListener('click', () => {
+        const filter = button.dataset.filter;
+        buttons.forEach((item) => item.setAttribute('aria-pressed', String(item === button)));
+        cards.forEach((card) => {
+          card.hidden = filter !== 'all' && card.dataset.category !== filter;
+        });
+      });
+    });
+
+    document.querySelectorAll('.photo img').forEach((image) => {
+      image.addEventListener('error', () => image.parentElement.classList.add('is-broken'));
+    });
+  </script>
+</body>
+</html>
+
+      .masthead { min-height: 31rem; }
+      .stats { grid-template-columns: 1fr; max-width: 19rem; }
+      .stat + .stat { border-top: 1px solid rgba(255, 247, 234, .2); border-left: 0; }
+      .filter-note { display: none; }
+      .section-intro { display: block; }
+      .section-intro p { margin-top: .8rem; }
+      .restaurant-grid { grid-template-columns: 1fr; }
+      .gallery { min-height: 17rem; }
+    }
+
+    @media (max-width: 520px) {
+      .masthead { min-height: 30rem; padding-top: 1.2rem; }
+      .topline { align-items: start; }
+      .eyebrow { max-width: 11rem; }
+      .headline-wrap { margin-top: 3.5rem; }
+      h1 { font-size: clamp(3rem, 18vw, 5rem); }
+      main { padding-top: 2.7rem; }
+      .gallery { grid-template-columns: 1fr 34%; min-height: 14.5rem; }
+      .card-body { padding: 1.15rem; }
+      .footnote { grid-template-columns: 1fr; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition: none !important; }
+    }
+  </style>
+</head>
+<body id="top">
+  <header class="masthead">
+    <div class="topline">
+      <p class="eyebrow">South Bay · Peninsula Restaurant Notes</p>
+      <p class="issue">11 家 · 2 条路线</p>
+    </div>
+    <div class="headline-wrap">
+      <h1>湾区<br>吃饭清单</h1>
+      <p class="dek">从 Cupertino、Sunnyvale、Milpitas 一路吃到 Palo Alto。每家都整理了地址、Google 地图、菜品与环境图，以及不绕弯的优缺点。</p>
+      <div class="stats" aria-label="清单概览">
+        <div class="stat"><strong>5</strong><span>家中餐 · 均可 walk in</span></div>
+        <div class="stat"><strong>6</strong><span>家其他品类 · 看提示</span></div>
+        <div class="stat"><strong>1 tap</strong><span>直达 Google 地图</span></div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="filters-wrap" aria-label="餐厅筛选">
+    <div class="filters">
+      <button class="filter-btn" type="button" data-filter="all" aria-pressed="true">全部 11 家</button>
+      <button class="filter-btn" type="button" data-filter="chinese" aria-pressed="false">中餐 · Walk in</button>
+      <button class="filter-btn" type="button" data-filter="other" aria-pressed="false">其他品类</button>
+      <span class="filter-note">点开卡片里的按钮即可导航</span>
+    </div>
+  </nav>
+
+  <main>
+    <div class="section-intro">
+      <h2>按当晚心情选</h2>
+      <p>想吃重口、想找漂亮环境，或只想选个离得近的地方——先看优缺点，再点地图出发。</p>
+    </div>
+
+    <section class="restaurant-grid" aria-live="polite">
+      <article class="card" data-category="chinese">
+        <div class="gallery">
+          <div class="photo" data-label="菜品实拍"><img loading="eager" src="https://imgcache.dealmoon.com/fsvrugccache.dealmoon.com/us2409/ugc/9f0/41e/05d/ed2b1a7346e4e33ccc05e13x1920x1440x1075.jpg_1280_1280_3_8d59.jpg" alt="留湘小聚云南与湘味菜品"></div>
+          <div class="photo" data-label="店内环境"><img loading="eager" src="https://ak-d.tripcdn.com/images/1mi0a224x8yo450qtA3A7_R_600_400_R5_Q90.jpg?proc=source%2Ftrip" alt="留湘小聚 Cupertino 店内环境"></div>
+          <span class="number">01</span>
+        </div>
+        <div class="card-body">
+          <div class="meta-row"><span class="tag">云南菜 · 湘味</span><span class="tag outline">Cupertino</span><span class="tag blue">Walk in</span></div>
+          <h3>留湘小聚 <span class="english">Ping’s Bistro</span></h3>
+          <p class="intro">云南菌菇、酸辣风味与湘菜同桌，适合多人点几道下饭菜一起分。店面不大、烟火气足，属于“为味道来”的热闹小馆。</p>
+          <div class="verdict"><p><b>优点</b><span>味道扎实，云南菜选择有辨识度</span></p><p><b>缺点</b><span>店面热闹，尖峰时段较嘈杂</span></p></div>
+          <p class="address"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.1 7 13 7 13s7-7.9 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5Z"/></svg><span>10700 S De Anza Blvd, Cupertino, CA 95014</span></p>
+          <div class="actions"><a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Ping%27s%20Bistro%2010700%20S%20De%20Anza%20Blvd%20Cupertino%20CA%2095014" target="_blank" rel="noopener">Google 地图 ↗</a><a class="source-link" href="https://www.dealmoon.com/post/2375739" target="_blank" rel="noopener">图片来源</a></div>
+        </div>
+      </article>
+
+      <article class="card" data-category="chinese">
+        <div class="gallery">
+          <div class="photo" data-label="菜品实拍"><img loading="lazy" src="https://cdn10.localdatacdn.com/ca/sunnyvale/9659205/original/Co8lXePXAl.jpeg" alt="Eilleen's Kitchen 江浙菜品"></div>
+          <div class="photo" data-label="店内环境"><img loading="lazy" src="https://cdn10.localdatacdn.com/ca/sunnyvale/9659205/original/h55s7WPJ6W.jpeg" alt="Eilleen's Kitchen 店内环境"></div>
+          <span class="number">02</span>
+        </div>
+        <div class="card-body">
+          <div class="meta-row"><span class="tag">江浙菜</span><span class="tag outline">Sunnyvale</span><span class="tag blue">Walk in</span></div>
+          <h3>Eilleen’s Kitchen</h3>
+          <p class="intro">偏精致的江浙家常路线，口味更收敛，适合想吃食材本味、又不想顿顿重辣的晚上。竹木细节让小馆显得清爽。</p>
+          <div class="verdict"><p><b>优点</b><span>食材好，江浙口味细致，距离近</span></p><p><b>缺点</b><span>在中餐里价位偏高</span></p></div>
+          <p class="address"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.1 7 13 7 13s7-7.9 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5Z"/></svg><span>251 W Washington Ave, Sunnyvale, CA 94086</span></p>
+          <div class="actions"><a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Eilleen%27s%20Kitchen%20251%20W%20Washington%20Ave%20Sunnyvale%20CA%2094086" target="_blank" rel="noopener">Google 地图 ↗</a><a class="source-link" href="https://www.restaurantji.com/ca/sunnyvale/eilleen-s-kitchen-/" target="_blank" rel="noopener">图片来源</a></div>
+        </div>
+      </article>
+
+      <article class="card" data-category="chinese">
+        <div class="gallery">
+          <div class="photo" data-label="菜品实拍"><img loading="lazy" src="https://d1w7312wesee68.cloudfront.net/KCEPsuXkQ1NQydZfSeR9CCAZpETh6NQABMAjQnucntU/ext%3Awebp/quality%3A85/c%3A2730%3A1280%3Ace%3A0%3A0/plain/s3%3A/toast-sites-resources-prod/restaurantImages/033e5f5a-2a30-45a7-8510-0ed8e35af92a/.jpg" alt="Jun Bistro 云南菌菇菜品"></div>
+          <div class="photo" data-label="门店环境"><img loading="lazy" src="https://static.where-e.com/United_States/California/Santa_Clara_County/Jun-Bistro_597be075427145d5b7295d845fb20889.jpg" alt="Jun Bistro Milpitas 门店"></div>
+          <span class="number">03</span>
+        </div>
+        <div class="card-body">
+          <div class="meta-row"><span class="tag">云贵融合</span><span class="tag outline">Milpitas</span><span class="tag blue">Walk in</span></div>
+          <h3>菌出云南 <span class="english">Jun Bistro</span></h3>
+          <p class="intro">以云南菌菇为主角，加入贵州酸香与现代摆盘；从野生菌、酸汤到创意小炒都有记忆点，适合想换口味的一餐。</p>
+          <div class="verdict"><p><b>优点</b><span>云贵风味鲜明，菌菇与酸辣菜出彩</span></p><p><b>缺点</b><span>热门时段可能排队，不过距离很近</span></p></div>
+          <p class="address"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.1 7 13 7 13s7-7.9 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5Z"/></svg><span>290 Barber Ct, Milpitas, CA 95035</span></p>
+          <div class="actions"><a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Jun%20Bistro%20290%20Barber%20Ct%20Milpitas%20CA%2095035" target="_blank" rel="noopener">Google 地图 ↗</a><a class="source-link" href="https://junbistro.us/" target="_blank" rel="noopener">图片来源</a></div>
+        </div>
+      </article>
+
+      <article class="card" data-category="chinese">
+        <div class="gallery">
+          <div class="photo" data-label="招牌大菜"><img loading="lazy" src="https://chili-garden.com/gallery/Chili%20Garden%20%E5%B1%B1%E5%9F%8E%E7%A7%81%E6%88%BF%E8%8F%9C01.jpg" alt="山城私房菜招牌菜"></div>
+          <div class="photo" data-label="官方环境图"><img loading="lazy" src="https://chili-garden.com/banner.jpg" alt="山城私房菜环境"></div>
+          <span class="number">04</span>
+        </div>
+        <div class="card-body">
+          <div class="meta-row"><span class="tag">东北风味 · 川渝家常</span><span class="tag outline">Milpitas</span><span class="tag blue">Walk in</span></div>
+          <h3>山城私房菜 <span class="english">Chili Garden</span></h3>
+          <p class="intro">铁锅炖与大份硬菜是主场，适合人多、胃口也好的局。做法带着东北豪爽和川渝香辣，最好一开始就少点一盘。</p>
+          <div class="verdict"><p><b>优点</b><span>美味，分量足，适合多人聚餐</span></p><p><b>缺点</b><span>环境普通；菜量太大常吃不完</span></p></div>
+          <p class="address"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.1 7 13 7 13s7-7.9 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5Z"/></svg><span>278 Barber Ct, Milpitas, CA 95035</span></p>
+          <div class="actions"><a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Chili%20Garden%20278%20Barber%20Ct%20Milpitas%20CA%2095035" target="_blank" rel="noopener">Google 地图 ↗</a><a class="source-link" href="https://chili-garden.com/" target="_blank" rel="noopener">图片来源</a></div>
+        </div>
+      </article>
+
+      <article class="card" data-category="chinese">
+        <div class="gallery">
+          <div class="photo" data-label="品牌菜品"><img loading="lazy" src="https://img.xiangmu.com/pics/202502/26/1740576150XQF1ZUW.png" alt="湘卜卜湖南菜品牌菜品"></div>
+          <div class="photo" data-label="品牌空间参考"><img loading="lazy" src="https://img.xiangmu.com/pics/202502/26/1740576153WMOLOPM.png" alt="湘卜卜品牌空间参考"></div>
+          <span class="number">05</span>
+        </div>
+        <div class="card-body">
+          <div class="meta-row"><span class="tag">新派湘菜</span><span class="tag outline">Cupertino</span><span class="tag blue">Walk in</span></div>
+          <h3>湘卜卜 <span class="english">XiangBobo</span></h3>
+          <p class="intro">主打现炒、香辣与砂锅类的年轻化湘菜，饭后还能顺路去茶理宜世续一杯奶茶，适合把晚餐和甜饮排成一站。</p>
+          <div class="verdict"><p><b>优点</b><span>离茶理宜世近，吃完接奶茶很顺路</span></p><p><b>缺点</b><span>热门时段可能排队</span></p></div>
+          <p class="address"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.1 7 13 7 13s7-7.9 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5Z"/></svg><span>10877 N Wolfe Rd, Cupertino, CA 95014</span></p>
+          <div class="actions"><a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=XiangBobo%20Hunan%20Cuisine%2010877%20N%20Wolfe%20Rd%20Cupertino%20CA%2095014" target="_blank" rel="noopener">Google 地图 ↗</a><a class="source-link" href="https://pos.chowbus.com/online-ordering/store/XiangBobo-Hunan-Cuisine/23919" target="_blank" rel="noopener">门店信息</a></div>
+        </div>
+      </article>
+
+      <article class="card" data-category="other">
+        <div class="gallery">
+          <div class="photo" data-label="菜品实拍"><img loading="lazy" src="https://www.sanjose.org/sites/default/files/styles/image_collage_three_748_x_498/public/2024-11/EOSNYX_PChang-1374.jpg.webp?itok=k8Bti235" alt="Eos and Nyx 美式地中海菜品"></div>
+          <div class="photo" data-label="店内环境"><img loading="lazy" src="https://static.wixstatic.com/media/692889_640bf724c96249ae872b67c325a20c19~mv2.jpg/v1/fill/w_1450%2Ch_815%2Cq_90/692889_640bf724c96249ae872b67c325a20c19~mv2.jpg" alt="Eos and Nyx 店内环境"></div>
+          <span class="number">06</span>
+        </div>
+        <div class="card-body">
+          <div class="meta-row"><span class="tag">美式 · 地中海</span><span class="tag outline">San Jose</span><span class="tag blue">建议预订</span></div>
+          <h3>Eos &amp; Nyx</h3>
+          <p class="intro">加州时令食材加地中海调味，菜式适合分享；挑高空间、室内绿植和双层酒吧很上镜，更像一场完整的约会或庆祝晚餐。</p>
+          <div class="verdict"><p><b>优点</b><span>环境漂亮，适合约会与聚会</span></p><p><b>缺点</b><span>口味偏清爽，重口人会觉得像“白人饭”</span></p></div>
+          <p class="address"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.1 7 13 7 13s7-7.9 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5Z"/></svg><span>201 S 2nd St, Ste 120, San Jose, CA 95113</span></p>
+          <div class="actions"><a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Eos%20%26%20Nyx%20201%20S%202nd%20St%20San%20Jose%20CA%2095113" target="_blank" rel="noopener">Google 地图 ↗</a><a class="source-link" href="https://www.eosnyxsj.com/" target="_blank" rel="noopener">图片来源</a></div>
+        </div>
+      </article>
+
+      <article class="card" data-category="other">
+        <div class="gallery">
+          <div class="photo" data-label="Mezze 菜品"><img loading="lazy" src="https://s.hdnux.com/photos/01/55/33/16/28685217/5/rawImage.jpg" alt="Zaytinya Palo Alto 地中海 mezze"></div>
+          <div class="photo" data-label="店内环境"><img loading="lazy" src="https://resizer.otstatic.com/v3/photos/90149743-1" alt="Zaytinya Palo Alto 店内环境"></div>
+          <span class="number">07</span>
+        </div>
+        <div class="card-body">
+          <div class="meta-row"><span class="tag">土耳其 · 希腊 · 黎巴嫩</span><span class="tag outline">Palo Alto</span><span class="tag blue">可预订</span></div>
+          <h3>Zaytinya</h3>
+          <p class="intro">José Andrés 团队的现代 mezze 餐厅，小盘菜适合多人分着尝；烤肉、蘸酱、皮塔饼和蔬菜都强调原味与香料层次。</p>
+          <div class="verdict"><p><b>优点</b><span>食材本味清楚，环境明亮好看</span></p><p><b>缺点</b><span>在 Palo Alto，距离较远</span></p></div>
+          <p class="address"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.1 7 13 7 13s7-7.9 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5Z"/></svg><span>180 El Camino Real, Suite EE 1400, Palo Alto, CA 94304</span></p>
+          <div class="actions"><a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Zaytinya%20180%20El%20Camino%20Real%20Palo%20Alto%20CA%2094304" target="_blank" rel="noopener">Google 地图 ↗</a><a class="source-link" href="https://www.zaytinya.com/location/palo-alto/" target="_blank" rel="noopener">图片来源</a></div>
+        </div>
+      </article>
+
+      <article class="card" data-category="other">
+        <div class="gallery">
+          <div class="photo" data-label="菜品实拍"><img loading="lazy" src="https://s3-media0.fl.yelpcdn.com/bphoto/x-SnIciIdIyjgfJx0iV8xQ/l.jpg" alt="Tamarine 越南融合菜品"></div>
+          <div class="photo" data-label="店内环境"><img loading="lazy" src="https://s3-media0.fl.yelpcdn.com/bphoto/QxEv1PVBGABkRD8ByKMD7w/l.jpg" alt="Tamarine Palo Alto 店内环境"></div>
+          <span class="number">08</span>
+        </div>
+        <div class="card-body">
+          <div class="meta-row"><span class="tag">现代越南菜</span><span class="tag outline">Palo Alto</span><span class="tag blue">可预订</span></div>
+          <h3>Tamarine</h3>
+          <p class="intro">把越南香草、鱼露与炭火风味做得更精致，适合想吃东南亚、又希望环境稳妥体面的聚餐或约会。</p>
+          <div class="verdict"><p><b>优点</b><span>味道好，越南风味细致而有层次</span></p><p><b>缺点</b><span>在 Palo Alto，距离较远</span></p></div>
+          <p class="address"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.1 7 13 7 13s7-7.9 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5Z"/></svg><span>546 University Ave, Palo Alto, CA 94301</span></p>
+          <div class="actions"><a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Tamarine%20546%20University%20Ave%20Palo%20Alto%20CA%2094301" target="_blank" rel="noopener">Google 地图 ↗</a><a class="source-link" href="https://www.tamarinerestaurant.com/" target="_blank" rel="noopener">图片来源</a></div>
+        </div>
+      </article>
+
+      <article class="card" data-category="other">
+        <div class="gallery">
+          <div class="photo" data-label="海鲜菜品"><img loading="lazy" src="https://s3-media0.fl.yelpcdn.com/bphoto/3IEhhsoSsYUstKWe1dzaJA/l.jpg" alt="Saigon Kitchen 龙虾海鲜菜品"></div>
+          <div class="photo" data-label="店内环境"><img loading="lazy" src="https://cdn.menu-world.com/saigon-kitchen/4.jpg" alt="Saigon Kitchen San Jose 店内环境"></div>
+          <span class="number">09</span>
+        </div>
+        <div class="card-body">
+          <div class="meta-row"><span class="tag">越南海鲜</span><span class="tag outline">San Jose · Little Saigon</span><span class="tag blue">Walk in</span></div>
+          <h3>Saigon Kitchen</h3>
+          <p class="intro">位于 Grand Century Mall，龙虾、螃蟹与蒜香面等适合多人共享；价格相对友好，是想吃热闹海鲜桌菜的实用选项。</p>
+          <div class="verdict"><p><b>优点</b><span>价格友好，海鲜选择多</span></p><p><b>缺点</b><span>越南城晚间较杂，建议结伴前往</span></p></div>
+          <p class="address"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.1 7 13 7 13s7-7.9 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5Z"/></svg><span>1111 Story Rd, #1005, San Jose, CA 95122</span></p>
+          <div class="actions"><a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Saigon%20Kitchen%201111%20Story%20Rd%20San%20Jose%20CA%2095122" target="_blank" rel="noopener">Google 地图 ↗</a><a class="source-link" href="https://www.yelp.com/biz/saigon-kitchen-san-jose" target="_blank" rel="noopener">图片来源</a></div>
+        </div>
+      </article>
+
+      <article class="card" data-category="other">
+        <div class="gallery">
+          <div class="photo" data-label="官方菜品图"><img loading="lazy" src="https://images.squarespace-cdn.com/content/v1/688084e7a137243f97c898bf/76a02757-38ef-4975-ae7a-94fd08117882/ARV02176.jpg?format=1500w" alt="HARU Los Altos 菜品"></div>
+          <div class="photo" data-label="官方空间形象"><img loading="lazy" src="https://images.squarespace-cdn.com/content/v1/688084e7a137243f97c898bf/1408738c-0583-473d-8bb1-2f3d401c2886/ChatGPT%2BImage%2B2026%E5%B9%B47%E6%9C%883%E6%97%A5%2B%E4%B8%8B%E5%8D%8810_06_05.png?format=1500w" alt="HARU Los Altos 官方空间形象"></div>
+          <span class="number">10</span>
+        </div>
+        <div class="card-body">
+          <div class="meta-row"><span class="tag">现代日料</span><span class="tag outline">Los Altos</span><span class="tag blue">可预订 / 可候位</span></div>
+          <h3>HARU</h3>
+          <p class="intro">新开的现代日料与酒吧，主打季节食材、寿司和热菜，空间偏精致。适合想尝新、又不想被固定 omakase 套餐绑住的一晚。</p>
+          <div class="verdict"><p><b>优点</b><span>新店，季节日料据说表现不错</span></p><p><b>缺点</b><span>Los Altos 略远</span></p></div>
+          <p class="address"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.1 7 13 7 13s7-7.9 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5Z"/></svg><span>325 Main St, Los Altos, CA 94022</span></p>
+          <div class="actions"><a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=HARU%20325%20Main%20St%20Los%20Altos%20CA%2094022" target="_blank" rel="noopener">Google 地图 ↗</a><a class="source-link" href="https://www.harulosaltos.com/" target="_blank" rel="noopener">图片来源</a></div>
+        </div>
+      </article>
+
+      <article class="card" data-category="other">
+        <div class="gallery">
+          <div class="photo" data-label="豆腐锅套餐"><img loading="lazy" src="https://img.cdn4dd.com/cdn-cgi/image/fit%3Dcontain%2Cwidth%3D1200%2Cheight%3D672%2Cformat%3Dauto/https%3A/doordash-static.s3.amazonaws.com/media/photosV2/edd5b892-4cf5-4afb-8da1-66cb6b8c9815-retina-large.jpg" alt="Kunjip Tofu 豆腐锅与小菜"></div>
+          <div class="photo" data-label="店内环境"><img loading="lazy" src="https://s.hdnux.com/photos/01/43/45/15/26104670/5/rawImage.jpg" alt="Kunjip Tofu Mountain View 店内环境"></div>
+          <span class="number">11</span>
+        </div>
+        <div class="card-body">
+          <div class="meta-row"><span class="tag">现代韩餐 · 豆腐锅</span><span class="tag outline">Mountain View</span><span class="tag blue">建议排候位</span></div>
+          <h3>Kunjip Tofu</h3>
+          <p class="intro">主打豆腐锅、汤饭与韩式小菜，一人一锅吃起来舒服，味道扎实。比传统豆腐屋更现代，适合各自点喜欢的汤。</p>
+          <div class="verdict"><p><b>优点</b><span>好吃，豆腐锅和汤饭选择丰富</span></p><p><b>缺点</b><span>一人一锅不方便分享，而且较远</span></p></div>
+          <p class="address"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.1 7 13 7 13s7-7.9 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5Z"/></svg><span>1962 W El Camino Real, Mountain View, CA 94040</span></p>
+          <div class="actions"><a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Kunjip%20Tofu%201962%20W%20El%20Camino%20Real%20Mountain%20View%20CA%2094040" target="_blank" rel="noopener">Google 地图 ↗</a><a class="source-link" href="https://kunjiptofu.com/" target="_blank" rel="noopener">图片来源</a></div>
+        </div>
+      </article>
+    </section>
+
+    <footer class="footnote">
+      <p>地址与门店信息已按公开资料核对。营业时间、排队和菜单会变化，出发前建议再点 Google 地图确认。照片来自餐厅官网、媒体或公开餐厅图集；湘卜卜的环境图为品牌空间参考，HARU 的环境图为官网空间形象图。</p>
+      <a class="back-top" href="#top">回到顶部 ↑</a>
+    </footer>
+  </main>
+
+  <script>
+    const buttons = document.querySelectorAll('.filter-btn');
+    const cards = document.querySelectorAll('.card');
+
+    buttons.forEach((button) => {
+      button.addEventListener('click', () => {
+        const filter = button.dataset.filter;
+        buttons.forEach((item) => item.setAttribute('aria-pressed', String(item === button)));
+        cards.forEach((card) => {
+          card.hidden = filter !== 'all' && card.dataset.category !== filter;
+        });
+      });
+    });
+
+    document.querySelectorAll('.photo img').forEach((image) => {
+      image.addEventListener('error', () => image.parentElement.classList.add('is-broken'));
+    });
+  </script>
+</body>
+</html>
